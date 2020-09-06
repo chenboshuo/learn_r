@@ -1,10 +1,14 @@
 # learn_r
+[![Documentation Status](https://readthedocs.org/projects/learn-r/badge/?version=latest)](https://learn-r.readthedocs.io/zh_CN/latest/?badge=latest)
+
 my notebook of r language. 我的R语言学习笔记
 
 
 ## reference
 
-Wickham, Hadley, and Garrett Grolemund. R for data science: import, tidy, transform, visualize, and model data. " O'Reilly Media, Inc.", 2016.
+-   Wickham, Hadley, and Garrett Grolemund. R for data science: import, tidy, transform, visualize, and model data. " O'Reilly Media, Inc.", 2016.
+
+-   Field, Andy, Jeremy Miles, and Zoë Field. Discovering statistics using R. Sage publications, 2012.
 
 
 ## 许可

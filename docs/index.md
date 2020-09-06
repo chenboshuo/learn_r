@@ -2,7 +2,9 @@
 
 ## reference
 
-Wickham, Hadley, and Garrett Grolemund. R for data science: import, tidy, transform, visualize, and model data. " O'Reilly Media, Inc.", 2016.
+-   Wickham, Hadley, and Garrett Grolemund. R for data science: import, tidy, transform, visualize, and model data. " O'Reilly Media, Inc.", 2016.
+
+-   Field, Andy, Jeremy Miles, and Zoë Field. Discovering statistics using R. Sage publications, 2012.
 
 
 ## License
