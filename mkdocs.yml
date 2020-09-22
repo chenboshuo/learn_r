@@ -1,4 +1,0 @@
-site_name: My R notebook
-theme: readthedocs
-nav:
-    - Home: index.md
