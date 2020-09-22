@@ -15,6 +15,35 @@ jupyter:
 
 # basic
 
+```R
+mode(12)
+```
+
+```R
+mode(c(1:5))
+```
+
+```R
+length(5)
+```
+
+```R
+length(c(3:5))
+```
+
+## Using mirrors
+
+```R
+options("repos")
+```
+
+```R
+options(repos="https://mirrors.tuna.tsinghua.edu.cn/CRAN/")
+```
+
+```R
+options("repos")
+```
 
 ## dataframe
 
@@ -47,10 +76,69 @@ names(metallica)
 matrix(0,2,5)
 ```
 
+```R
+m = matrix(c(3:14), nrow=4, byrow=TRUE)
+m
+```
+
+```R
+rownames = c('row1','row2','row3','row4')
+colnames = c('col1', 'col2', 'col3')
+```
+
 ## path
 
 ```R
 getwd()
+```
+
+## vector 
+
+```R
+vector1 = c(1,3,5,7,9)
+vector1
+```
+
+```R
+vector2 = rep(1,5)
+vector2
+```
+
+```R
+vector3 = seq(1,9,by=2)
+vector3
+```
+
+```R
+vector4 = seq(1,5,length=10)
+vector4
+```
+
+```R
+v = seq(1,5)
+v
+```
+
+```R
+v[1:3]
+```
+
+```R
+-c(1,2)
+```
+
+```R
+v[-c(1,2)]
+```
+
+```R
+
+```
+
+## factor 
+
+```R
+factor(c(1,1,2,3,5,8))
 ```
 
 ## dataset
@@ -79,6 +167,22 @@ sd(mtcars$mpg)
 summary(mtcars)
 ```
 
+```R
+rowSums(mtcars)
+```
+
+```R
+colSums(mtcars)
+```
+
+```R
+apply(mtcars,1,mean)
+```
+
+```R
+?apply
+```
+
 ## Dates
 
 ```R
@@ -88,6 +192,91 @@ agegap = husbands - wifes
 agegap
 ```
 
-```R
+## apply()
 
+```R
+# ?apply()
+```
+
+```R
+x = cbind(x1=3, x2=c(4:1, 2:5))
+x
+```
+
+```R
+apply(x,2,mean)
+```
+
+```R
+apply(x,1,mean)
+```
+
+```R
+?lapply()
+```
+
+```R
+lapply(x,sqrt)
+```
+
+```R
+?rapply()
+```
+
+```R
+?mode()
+```
+
+```R
+?class()
+```
+
+## list
+
+```R
+l = list(1,"123",c(1,2,3))
+l
+```
+
+```R
+t = l[3]
+t
+```
+
+```R
+mode(t)
+```
+
+```R
+t = unlist(t)
+t
+```
+
+```R
+mode(t)
+```
+
+```R
+t[1]
+```
+
+```R
+l[[3]]
+```
+
+```R
+l[[3]][1]
+```
+
+```R
+unlists = unlist(l)
+unlists
+```
+
+```R
+?paste()
+```
+
+```R
+?gsub()
 ```
