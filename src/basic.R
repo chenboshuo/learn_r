@@ -48,13 +48,48 @@ names(metallica)
 
 # ## matrix
 
+
+
 matrix(0,2,5)
+
+matrix(1:6, nrow=2, ncol=3, byrow=F)
 
 m = matrix(c(3:14), nrow=4, byrow=TRUE)
 m
 
-rownames = c('row1','row2','row3','row4')
-colnames = c('col1', 'col2', 'col3')
+rownames(m) = c('row1','row2','row3','row4')
+colnames(m) = c('col1', 'col2', 'col3')
+m
+
+
+
+diag(m)
+
+t(m)
+
+det(matrix(c(1:4),nrow=2,ncol = 2))
+
+m*m
+
+m%*%t(m)
+
+# ## DataFrame 
+
+x = c(42, 7, 64,9)
+y = 1:4
+z.df = data.frame(index=y,value=x)
+z.df
+
+
+
+z.df[1,2] = 5
+z.df
+
+z.df$col3 = z.df$index + 3
+z.df
+
+new_row = c(1,2,3)
+rbind(z.df,new_row)
 
 # ## path
 
@@ -168,3 +203,47 @@ unlists
 ?paste()
 
 ?gsub()
+
+# ## TODO
+
+attach(Puromycin)
+
+head(Puromycin)
+
+puroA = Puromycin[Puromycin$stated == 'treated']
+puroA
+
+Puromycin[,c("rate","state")]
+
+# ## plot
+
+plot(rate ~ conc, data=puroA)
+abline(lm(rate ~ conc, data=puroA),col='red')
+abline(a=100,b=105,col='black')
+abline(h=200,col='red')
+abline(v=0.6, col='green')
+
+par(mfrow=c(2,2)) 
+plot(rate ~ conc,data=puroA,pch=2,concl=4,cex=2.5,
+     xlim=c(0,1.2), ylim=c(40,210),
+     ylab="Concentration", xlab="Rate",
+     cex.main=10)
+title(main="Puromycin",cex.lab=1.2)
+
+# ## if-else
+
+x = -5
+ifelse(x >= 0, sqrt(x), x*x)
+
+if(x>=0){
+    sqrt(x)
+}else{
+    x*x
+}
+
+# ## while
+
+for(i in 1:5)
+    print(1:i)
+
+while(i<)
